@@ -284,7 +284,7 @@ In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and s
 
 Start your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.
 
-The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. 
+The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine.
 
 ## Formatting Code Automatically
 
@@ -772,18 +772,6 @@ import { Navbar, Jumbotron, Button } from 'react-bootstrap';
 ```
 
 Now you are ready to use the imported React Bootstrap components within your component hierarchy defined in the render method. Here is an example [`App.js`](https://gist.githubusercontent.com/gaearon/85d8c067f6af1e56277c82d19fd4da7b/raw/6158dd991b67284e9fc8d70b9d973efe87659d72/App.js) redone using React Bootstrap.
-
-### Using a Custom Theme
-
-Sometimes you might need to tweak the visual styles of Bootstrap (or equivalent package).<br>
-We suggest the following approach:
-
-* Create a new package that depends on the package you wish to customize, e.g. Bootstrap.
-* Add the necessary build steps to tweak the theme, and publish your package on npm.
-* Install your own theme npm package as a dependency of your app.
-
-Here is an example of adding a [customized Bootstrap](https://medium.com/@tacomanator/customizing-create-react-app-aa9ffb88165) that follows these steps.
-
 ## Adding Flow
 
 Flow is a static type checker that helps you write code with fewer bugs. Check out this [introduction to using static types in JavaScript](https://medium.com/@preethikasireddy/why-use-static-types-in-javascript-part-1-8382da1e0adb) if you are new to this concept.
@@ -1822,7 +1810,7 @@ If you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to c
     RewriteRule ^ index.html [QSA,L]
 ```
 
-It will get copied to the `build` folder when you run `npm run build`. 
+It will get copied to the `build` folder when you run `npm run build`.
 
 If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).
 
@@ -2218,7 +2206,7 @@ To resolve this:
 1. Open an issue on the dependency's issue tracker and ask that the package be published pre-compiled.
   * Note: Create React App can consume both CommonJS and ES modules. For Node.js compatibility, it is recommended that the main entry point is CommonJS. However, they can optionally provide an ES module entry point with the `module` field in `package.json`. Note that **even if a library provides an ES Modules version, it should still precompile other ES6 features to ES5 if it intends to support older browsers**.
 
-2. Fork the package and publish a corrected version yourself. 
+2. Fork the package and publish a corrected version yourself.
 
 3. If the dependency is small enough, copy it to your `src/` folder and treat it as application code.
 
